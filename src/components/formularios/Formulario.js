@@ -12,7 +12,6 @@ function Formulario() {
     fecha:'',
     hora:"",
     categoria:"",
-    image:""
   } 
 
   const [guardarClientes, setguardarClientes]=useState(variables);
@@ -147,13 +146,6 @@ function Formulario() {
             Comprobante
           </label>
           <div class="col-sm-10">
-            <input 
-            type="file" 
-            class="form-control" 
-            name="image"
-            value={guardarClientes.image}
-            onChange={obtenerValues}
-            />  
           </div>
         </div>
         <button type="submit" class="btn btn-primary">
